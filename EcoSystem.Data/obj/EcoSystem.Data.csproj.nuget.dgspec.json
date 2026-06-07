@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sasha\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj": {}
+    "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sasha\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj": {
+    "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sasha\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj",
+        "projectUniqueName": "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj",
         "projectName": "EcoSystem.Data",
-        "projectPath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj",
+        "projectPath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj",
         "packagesPath": "C:\\Users\\sasha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem.Data\\obj\\",
+        "outputPath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

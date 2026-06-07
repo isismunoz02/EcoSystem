@@ -36,6 +36,16 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "EcoSystem.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/EcoSystem.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoSystem.Data.dll": {}
+        }
       }
     }
   },
@@ -75,10 +85,16 @@
         "microsoft.openapi.2.0.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "EcoSystem.Data/1.0.0": {
+      "type": "project",
+      "path": "../EcoSystem.Data/EcoSystem.Data.csproj",
+      "msbuildProject": "../EcoSystem.Data/EcoSystem.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "EcoSystem.Data >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.5"
     ]
   },
@@ -89,11 +105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sasha\\EcoSystem\\EcoSystem.API\\EcoSystem.API.csproj",
+      "projectUniqueName": "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.API\\EcoSystem.API.csproj",
       "projectName": "EcoSystem.API",
-      "projectPath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem.API\\EcoSystem.API.csproj",
+      "projectPath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.API\\EcoSystem.API.csproj",
       "packagesPath": "C:\\Users\\sasha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem.API\\obj\\",
+      "outputPath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -113,7 +129,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj": {
+              "projectPath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

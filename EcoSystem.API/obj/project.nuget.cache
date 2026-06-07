@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zhXaPnfe290=",
+  "dgSpecHash": "1za77ZlMs2o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem.API\\EcoSystem.API.csproj",
+  "projectFilePath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.API\\EcoSystem.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sasha\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
     "C:\\Users\\sasha\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
