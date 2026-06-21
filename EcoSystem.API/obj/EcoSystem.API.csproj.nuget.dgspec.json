@@ -526,7 +526,11 @@
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj": {
+                "projectPath": "C:\\Users\\sasha\\EcoSystem\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -883,6 +887,12 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

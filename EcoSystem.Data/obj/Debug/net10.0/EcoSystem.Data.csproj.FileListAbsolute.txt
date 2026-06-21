@@ -1,0 +1,13 @@
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\bin\Debug\net10.0\EcoSystem.Data.deps.json
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\bin\Debug\net10.0\EcoSystem.Data.dll
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\bin\Debug\net10.0\EcoSystem.Data.pdb
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\obj\Debug\net10.0\EcoSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\obj\Debug\net10.0\EcoSystem.Data.AssemblyInfoInputs.cache
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\obj\Debug\net10.0\EcoSystem.Data.AssemblyInfo.cs
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\obj\Debug\net10.0\EcoSystem.Data.csproj.CoreCompileInputs.cache
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\obj\Debug\net10.0\EcoSystem.Data.sourcelink.json
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\obj\Debug\net10.0\EcoSystem.Data.dll
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\obj\Debug\net10.0\refint\EcoSystem.Data.dll
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\obj\Debug\net10.0\EcoSystem.Data.pdb
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\obj\Debug\net10.0\ref\EcoSystem.Data.dll
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.Data\obj\Debug\net10.0\EcoSystem.Data.csproj.AssemblyReference.cache
