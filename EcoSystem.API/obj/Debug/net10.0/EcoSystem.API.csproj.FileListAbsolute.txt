@@ -38,3 +38,6 @@ C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.API\obj\Debug\net10.0\EcoSystem.API
 C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.API\obj\Debug\net10.0\ref\EcoSystem.API.dll
 C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sasha\EcoSystem\EcoSystem\EcoSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
