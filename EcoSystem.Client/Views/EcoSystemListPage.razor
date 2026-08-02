@@ -1,0 +1,41 @@
+@page "/productos"
+@using EcoSystem.Client.Models
+@inject EcoSystem.Client.Services.ApiService ApiService
+
+<h1>EcoSystem Connect · Fase 2</h1>
+
+<p>Iniciando petición GET asíncrona...</p>
+
+@if (productos is null)
+{
+    <p>Cargando productos...</p>
+}
+else if (productos.Count == 0)
+{
+    <p>No se recuperaron productos.</p>
+}
+else
+{
+    <p>✓ @productos.Count producto(s) recuperado(s) exitosamente:</p>
+
+    <ul>
+        @foreach (var p in productos)
+        {
+            <li>
+                [@p.Id] @p.Nombre — $@p.Precio
+                (Stock: @p.Stock)
+            </li>
+        }
+    </ul>
+
+    <p>Firma 2 · Criterio cumplido ✓</p>
+}
+
+@code {
+    private List<Producto>? productos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        productos = await ApiService.GetProductosAsync();
+    }
+}

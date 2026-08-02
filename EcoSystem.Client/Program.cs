@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using EcoSystem.Client;
 using EcoSystem.Client.Services;
+using EcoSystem.Client.ViewModels;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
@@ -14,5 +15,6 @@ builder.Services.AddScoped(sp => new HttpClient
     Timeout = TimeSpan.FromSeconds(15)
 });
 builder.Services.AddScoped<ApiService>();
+builder.Services.AddScoped<LoginViewModel>();
 
 await builder.Build().RunAsync();

@@ -1,0 +1,53 @@
+@page "/login"
+@using EcoSystem.Client.ViewModels
+@inject LoginViewModel ViewModel
+
+<div class="login-container">
+    <div class="login-card">
+        <h2>EcoSystem Connect</h2>
+        <p class="subtitle">Iniciar sesión</p>
+
+        <label>Usuario</label>
+        <input class="form-control"
+               placeholder="Ingresa tu usuario"
+               @bind="ViewModel.NombreUsuario"
+               @bind:event="oninput" />
+
+        <label>Contraseña</label>
+        <input class="form-control"
+               type="password"
+               placeholder="Ingresa tu contraseña"
+               @bind="ViewModel.Contrasena"
+               @bind:event="oninput" />
+
+        <button class="btn-primary" @onclick="IniciarSesion">
+            Ingresar
+        </button>
+
+        <button class="btn-secondary" @onclick="VerificarBinding">
+            Verificar Binding
+        </button>
+
+        @if (ViewModel.TieneError)
+        {
+            <p class="error">@ViewModel.MensajeError</p>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(ViewModel.MensajeResultado))
+        {
+            <p class="success">@ViewModel.MensajeResultado</p>
+        }
+    </div>
+</div>
+
+@code {
+    private void IniciarSesion()
+    {
+        ViewModel.IniciarSesion();
+    }
+
+    private void VerificarBinding()
+    {
+        ViewModel.VerificarBinding();
+    }
+}
