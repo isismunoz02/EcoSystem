@@ -37,13 +37,25 @@
         {
             <p class="success">@ViewModel.MensajeResultado</p>
         }
+
+        @if (ViewModel.LoginExitoso)
+        {
+            <div class="token-box">
+                <p>@ViewModel.TokenMensaje</p>
+
+                @if (ViewModel.Expiration is not null)
+                {
+                    <p>Expira: @ViewModel.Expiration</p>
+                }
+            </div>
+        }
     </div>
 </div>
 
 @code {
-    private void IniciarSesion()
+    private async Task IniciarSesion()
     {
-        ViewModel.IniciarSesion();
+        await ViewModel.IniciarSesionAsync();
     }
 
     private void VerificarBinding()

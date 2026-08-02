@@ -15,6 +15,7 @@ builder.Services.AddScoped(sp => new HttpClient
     Timeout = TimeSpan.FromSeconds(15)
 });
 builder.Services.AddScoped<ApiService>();
+builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<LoginViewModel>();
 
 await builder.Build().RunAsync();
