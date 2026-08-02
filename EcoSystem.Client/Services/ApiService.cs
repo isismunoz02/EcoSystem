@@ -14,32 +14,29 @@ public class ApiService
 
     public async Task<List<Producto>> GetProductosAsync()
     {
-        try
-        {
-            var response = await _http.GetAsync("api/Productos");
+        var productos = await _http.GetFromJsonAsync<List<Producto>>("api/Productos");
+        return productos ?? new List<Producto>();
+    }
 
-            // Si la API responde con error 400, 404, 500, etc.,
-            // esta línea lanza una excepción.
-            response.EnsureSuccessStatusCode();
+    public async Task<Producto?> CrearProductoAsync(Producto producto)
+    {
+        var response = await _http.PostAsJsonAsync("api/Productos", producto);
 
-            var productos = await response.Content.ReadFromJsonAsync<List<Producto>>();
+        if (!response.IsSuccessStatusCode)
+            return null;
 
-            return productos ?? new List<Producto>();
-        }
-        catch (HttpRequestException ex)
-        {
-            Console.WriteLine($"Error de red: {ex.Message}");
-            return new List<Producto>();
-        }
-        catch (TaskCanceledException)
-        {
-            Console.WriteLine("Tiempo de espera agotado.");
-            return new List<Producto>();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error inesperado: {ex.Message}");
-            return new List<Producto>();
-        }
+        return await response.Content.ReadFromJsonAsync<Producto>();
+    }
+
+    public async Task<bool> ActualizarProductoAsync(int id, Producto producto)
+    {
+        var response = await _http.PutAsJsonAsync($"api/Productos/{id}", producto);
+        return response.IsSuccessStatusCode;
+    }
+
+    public async Task<bool> EliminarProductoAsync(int id)
+    {
+        var response = await _http.DeleteAsync($"api/Productos/{id}");
+        return response.IsSuccessStatusCode;
     }
 }
